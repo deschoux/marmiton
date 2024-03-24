@@ -1,0 +1,101 @@
+/* body : police, taille de texte (16px) et couleur de fond (#efefef) - roboto pour la police de caractère choisi sur google */
+
+body {
+  font-family: "Roboto", sans-serif;
+  background-color: #efefef;
+  font-size: 16px;
+}
+/* .container (une class) : largeur de 1024px et marges latérales automatiques */
+/* On a coutume de créer une class nommée .container pour styliser un wrapper. */
+.container {
+  width: 1024px;
+  margin: 0 auto;
+}
+/* section : couleur de fond (white), marges internes de 60px verticalement et 30px horizontalement, ainsi qu'un arrondi aux angles de 20px */
+section {
+  padding: 60px 30px;
+  border-radius: 20px;
+  background-color: white;
+}
+/* h1 : taille de texte (50px), épaisseur du trait en gras, alignement central du texte, et couleur (#393c6c) */
+h1 {
+  font-size: 50px;
+  text-align: center;
+  color: #393c6c;
+  font-weight: bold;
+}
+/* h2 : taille de texte (30px), épaisseur du trait en gras, couleur (#f3735f), marge haute de 70px et marge basse de 20px */
+h2 {
+  font-size: 30px;
+  color: #f3735f;
+  font-weight: bold;
+  margin: 70px 0 20px 0;
+}
+/* h3 : taille de texte (18px), épaisseur du trait en gras, couleur (#393c6c) et hauteur de ligne de 22px */
+h3 {
+  font-size: 18px;
+  color: #393c6c;
+  font-weight: bold;
+  line-height: 22px;
+}
+/* p : hauteur de ligne de 22px et marge basse de 20px */
+p {
+  margin-bottom: 20px;
+  line-height: 22px;
+}
+/* HEADER */
+header {
+  border-bottom: solid 1px #f3735f;
+  background-color: white;
+}
+header img {
+  height: 30px;
+  margin: 20px 0;
+}
+/* MAIN */
+main > div {
+  padding-top: 60px;
+}
+.baseline {
+  text-align: center;
+  font-size: 12px;
+  color: #6c6c6c;
+  line-height: 30px;
+}
+.total {
+  width: 400px;
+  background-color: #8a98b1;
+  color: white;
+  font-size: 22px;
+  font-weight: bold;
+  line-height: 50px;
+  text-align: center;
+  border-radius: 10px;
+  margin: 30px auto 60px auto;
+}
+.recipe-images > img {
+  width: 300px;
+  height: 300px;
+  object-fit: cover;
+  object-position: center;
+  border-radius: 10px;
+  vertical-align: middle; /* ! */
+}
+.recipe-images > img:not(:last-child) {
+  margin-right: 26px;
+}
+ul {
+  padding-left: 20px;
+}
+li {
+  list-style: disc;
+  line-height: 20px;
+  color: #6c6c6c;
+}
+/* FOOTER */
+footer {
+  text-align: center;
+  padding: 60px 0;
+  color: #6c6c6c;
+  font-size: 12px;
+}
